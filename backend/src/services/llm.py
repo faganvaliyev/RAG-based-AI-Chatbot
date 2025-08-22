@@ -1,5 +1,6 @@
 import asyncio
 import json
+import functools
 import boto3
 from botocore.config import Config
 from src.config import AWS_ACCESS_KEY, AWS_SECRET_KEY, BEDROCK_REGION

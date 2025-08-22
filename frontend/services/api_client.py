@@ -1,6 +1,6 @@
 import requests
 
-API_URL = "http://backend_new:8001/api/v1/chat"
+API_URL = "http://localhost:8001/api/v1/chat"
 
 def chat_api(query: str, temperature: float = 0.7, max_tokens: int = 1024) -> str:
     payload = {

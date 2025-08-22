@@ -22,8 +22,8 @@ RUN uv sync --no-dev
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
-# Expose 8501 port
-EXPOSE 8501
+# Expose 8502 port
+EXPOSE 8502
 
 # Run streamlit application 
 CMD ["uv", "run", "streamlit", "run", "app.py"]

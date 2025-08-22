@@ -14,7 +14,7 @@ services:
       - ./backend:/app
       - backend_venv:/app/.venv
     ports:
-      - "8000:8000"
+      - "8001:8001"
   
   frontend:
     build:

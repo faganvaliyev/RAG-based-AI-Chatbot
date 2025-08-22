@@ -1,7 +1,7 @@
 # RAG AI Chatbot
 
-This is a **Retrieval-Augmented Generation (RAG) AI Chatbot** that combines **large language models (LLMs)** with a **vector-based knowledge retrieval system**.  
-It allows users to chat in real-time, upload files for context, and leverage a knowledge base hosted on S3 or other sources.
+This is a **Retrieval-Augmented Generation (RAG) AI Chatbot** that combines **large language models (LLMs)**
+It allows users to chat in real-time, upload files for context.
 
 ---
 

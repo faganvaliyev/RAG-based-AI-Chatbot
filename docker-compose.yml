@@ -1,41 +1,40 @@
 version: "3.8"
-      
+
 services:
-  backend:
+  backend_new:
     build:
       context: .
       dockerfile: backend/Dockerfile
     networks:
-      - safe_networks
+      - new_safe_network
     restart: always
-    image: backend
-    container_name: backend
+    image: backend_new
+    container_name: backend_new
     volumes:
       - ./backend:/app
-      - backend_venv:/app/.venv
+      - backend_new_venv:/app/.venv
     ports:
       - "8001:8001"
-  
-  frontend:
+
+  frontend_new:
     build:
       context: .
       dockerfile: frontend/Dockerfile
     networks:
-      - safe_networks
+      - new_safe_network
     restart: always
-    image: frontend
-    container_name: frontend
+    image: frontend_new
+    container_name: frontend_new
     volumes:
       - ./frontend:/app
-      - frontend_venv:/app/.venv
+      - frontend_new_venv:/app/.venv
     ports:
       - "8502:8502"
 
-
 volumes:
-  backend_venv:
-  frontend_venv:
+  backend_new_venv:
+  frontend_new_venv:
 
 networks:
-  safe_networks:
+  new_safe_network:
     driver: bridge

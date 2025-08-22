@@ -51,12 +51,13 @@ async def generate_llm_response(query: str, temperature: float = 0.7, max_tokens
 
 
     response = await asyncio.to_thread(
+    functools.partial(
         bedrock_runtime.invoke_model,
         modelId=MODEL_ID,
         body=json.dumps(prompt_payload),
         contentType="application/json",
         accept="application/json",
-    )
+    ))
 
 
     # Decode the response

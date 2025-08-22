@@ -1,5 +1,5 @@
 import streamlit as st
-from services.api_client import stream_chat_api
+from services.api_client import chat_api
 from services.chat_service import init_session, create_chat, delete_chat, _append_message_to_session, get_current_chat
 import PyPDF2
 import docx
@@ -116,12 +116,7 @@ if prompt := st.chat_input("Ask something..."):
         answer = ""
 
 
-        # STREAMING HERE
-        for token in stream_chat_api(context, temperature=temperature, max_tokens=max_tokens):
-            answer += token
-            message_placeholder.markdown(answer + "▌")  
-
-
+        answer = chat_api(context, temperature=temperature, max_tokens=max_tokens)
         message_placeholder.markdown(answer)  
 
 

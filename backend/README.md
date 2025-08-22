@@ -27,16 +27,16 @@ cd rag-ai-chatbot/backend
 ---
 ### 2. Create virtual environment
 ##### python -m venv venv
-##### source venv/bin/activate      # Linux / macOS
-##### venv\Scripts\activate         # Windows
+##### source venv/bin/activate       Linux / macOS
+##### venv\Scripts\activate          Windows
 ---
 ### 3. Install dependencies
-pip install -r requirements.txt
- or if using poetry/pyproject.toml
-poetry install
+##### pip install -r requirements.txt
+##### or if using poetry/pyproject.toml
+##### poetry install
 ---
 ### 4. Run the backend
-uvicorn app.main:app --reload
+##### uvicorn app.main:app --reload
 
 
 

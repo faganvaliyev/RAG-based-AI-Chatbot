@@ -21,9 +21,9 @@
 
 
 ### 1. Clone the repository
-   bash
-git clone https://github.com/faganvaliyev/RAG-based-AI-Chatbot
-cd rag-ai-chatbot/backend
+   
+##### git clone https://github.com/faganvaliyev/RAG-based-AI-Chatbot
+##### cd rag-ai-chatbot/backend
 ---
 ### 2. Create virtual environment
 ##### python -m venv venv

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from app.api.v1 import routes
+from src.api.v1 import routes
 
 app = FastAPI(title="RAG AI Chatbot Backend (LLM-only)")
 

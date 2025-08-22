@@ -2,7 +2,7 @@ import asyncio
 import json
 import boto3
 from botocore.config import Config
-from app.config import AWS_ACCESS_KEY, AWS_SECRET_KEY, BEDROCK_REGION
+from src.config import AWS_ACCESS_KEY, AWS_SECRET_KEY, BEDROCK_REGION
 
 
 # Initialize Bedrock runtime client

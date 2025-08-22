@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
-from app.services.llm import generate_llm_response
-from app.models.schema import ChatRequest
+from src.services.llm import generate_llm_response
+from src.models.schema import ChatRequest
 
 
 router = APIRouter(prefix="/api/v1")

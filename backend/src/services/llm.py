@@ -41,6 +41,7 @@ async def generate_llm_response(query: str, temperature: float = 0.7, max_tokens
     """
     Async generator that yields assistant tokens as SSE (Server-Sent Events) and saves chat context.
     """
+    yield "data: \n\n"
     prompt_payload = build_prompt(query, temperature=temperature, max_tokens=max_tokens)
 
     # Async-friendly Bedrock API call

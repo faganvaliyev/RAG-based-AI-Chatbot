@@ -22,4 +22,5 @@ async def chat_stream_endpoint(request: ChatRequest):
             yield token.encode("utf-8")
 
 
-    return StreamingResponse(event_generator(), media_type="text/plain")
+    return StreamingResponse(event_generator(), media_type="text/event-stream", headers={"Cache-Control": "no-cache"}
+)

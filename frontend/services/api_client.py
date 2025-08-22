@@ -18,6 +18,6 @@ def stream_chat_api(query: str, temperature: float = 0.7, max_tokens: int = 1024
 
     with requests.post(API_URL, json=payload, stream=True) as response:
         response.raise_for_status()  # Ensure errors are caught
-        for chunk in response.iter_content(chunk_size=1, decode_unicode=True):
+        for chunk in response.iter_lines(chunk_size=256, decode_unicode=True):
             if chunk:
                 yield chunk

@@ -25,5 +25,5 @@ ENV PYTHONUNBUFFERED=1 \
 # Expose 8001 port
 EXPOSE 8001
 
-# Run uvicorn server for fastapi application 
-CMD ["uv", "run", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8001"]
+# Run uvicorn server for fastapi application with extended keep-alive timeout
+CMD ["uv", "run", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8001", "--timeout-keep-alive", "300"]

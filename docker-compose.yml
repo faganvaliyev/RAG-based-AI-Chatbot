@@ -13,6 +13,8 @@ services:
     volumes:
       - ./backend:/app
       - backend_new_venv:/app/.venv
+    env_file:
+      - .env
     ports:
       - "8001:8001"
 

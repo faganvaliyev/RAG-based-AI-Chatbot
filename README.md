@@ -28,8 +28,8 @@ It allows users to chat in real-time, upload files for context.
 │ │ │ └── retrieval.py # Knowledge retrieval logic
 │ │ ├── models/schema.py # Request/response validation
 │ │ ├── db/vector_store.py # Vector store (FAISS) management
-│ │ ├──     main.py # FastAPI entrypoint
 │ │ └── config.py # API keys, model options, etc.
+│ ├── main.py # FastAPI entrypoint
 │ ├── Dockerfile
 │ └── pyproject.toml
 └── frontend/

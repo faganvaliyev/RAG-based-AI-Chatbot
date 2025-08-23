@@ -4,7 +4,11 @@ This is a **Retrieval-Augmented Generation (RAG) AI Chatbot** that combines **la
 It allows users to chat in real-time, upload files for context.
 
 ---
+## 💬  Demo 🎥
 
+https://github.com/user-attachments/assets/d2860e65-0e27-4db7-99dc-1b980a59544d
+
+---
 ## ⚡ Features
 
 - **RAG Pipeline**: Combines user queries with vector-based knowledge for contextual answers.  

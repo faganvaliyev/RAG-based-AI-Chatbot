@@ -6,7 +6,7 @@ It allows users to chat in real-time, upload files for context.
 ---
 ## 💬  Demo 🎥
 
-https://github.com/user-attachments/assets/d2860e65-0e27-4db7-99dc-1b980a59544d
+https://github.com/user-attachments/assets/e0be246c-3467-4616-b279-c4bb21d76988
 
 ---
 ## ⚡ Features

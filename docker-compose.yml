@@ -14,7 +14,7 @@ services:
       - ./backend:/app
       - backend_new_venv:/app/.venv
     env_file:
-      - .env
+      - /home/ubunutu/bedrock-env/backend/.env
     ports:
       - "8001:8001"
 

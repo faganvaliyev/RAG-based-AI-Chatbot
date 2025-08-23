@@ -21,14 +21,14 @@ It allows users to chat in real-time, upload files for context.
 
 ```
 ├── backend/
-│ ├── app/
-│ │ ├── main.py # FastAPI entrypoint
+│ ├── src/ 
 │ │ ├── api/v1/routes.py # API routes
 │ │ ├── services/
 │ │ │ ├── llm.py # LLM wrappers & streaming
 │ │ │ └── retrieval.py # Knowledge retrieval logic
 │ │ ├── models/schema.py # Request/response validation
 │ │ ├── db/vector_store.py # Vector store (FAISS) management
+│ │ ├──     main.py # FastAPI entrypoint
 │ │ └── config.py # API keys, model options, etc.
 │ ├── Dockerfile
 │ └── pyproject.toml
